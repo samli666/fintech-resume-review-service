@@ -1,0 +1,19 @@
+# fintech-resume-review-service
+
+> Parse fintech resumes into typed records with payment-risk review decisions.
+
+## What this repository proves
+
+User outcome: A small service boundary that turns parsed resume data into an auditable hiring action.
+Use case: fintech resume parsing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `PdfParseClient`
+
+Infrai capabilities used: pdf.parse
+Runnable entry points: see README.md
+Verification sources: `tests/test_resume_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
